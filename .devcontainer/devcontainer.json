@@ -10,5 +10,8 @@
 
 	// The 'workspaceFolder' property is the path VS Code should open by default when
 	// connected. Corresponds to a volume mount in .devcontainer/docker-compose.yml
-	"workspaceFolder": "/workspaces"
+	"workspaceFolder": "/workspaces",
+
+	 // Use 'postCreateCommand' to run commands after the container is created.
+         "postCreateCommand": "wget https://lmstudio.ai/beta-releases.html#linux-beta"
 }
