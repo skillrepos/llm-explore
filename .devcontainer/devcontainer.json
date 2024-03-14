@@ -1,17 +1,5 @@
 {
-	"name": "Your Definition Name Here (Community)",
-
-	// Update the 'dockerComposeFile' list if you have more compose files or use different names.
-	"dockerComposeFile": "docker-compose.yml",
-
-	// The 'service' property is the name of the service for the container that VS Code should
-	// use. Update this value and .devcontainer/docker-compose.yml to the real service name.
-	"service": "novnc",
-
-	// The 'workspaceFolder' property is the path VS Code should open by default when
-	// connected. Corresponds to a volume mount in .devcontainer/docker-compose.yml
-	"workspaceFolder": "/workspaces",
+	"name": "explore LLM",
 
 	 // Use 'postCreateCommand' to run commands after the container is created.
-         "postCreateCommand": "wget https://lmstudio.ai/beta-releases.html#linux-beta"
-}
+         "postCreateCommand": "./startup.sh"
