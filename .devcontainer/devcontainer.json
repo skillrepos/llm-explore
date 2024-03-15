@@ -2,5 +2,5 @@
 	"name": "explore LLM",
 
 	 // Use 'postCreateCommand' to run commands after the container is created.
-         "postCreateCommand": "chmod +x startup.sh && set -o xtrace &&  bash -x startup.sh"
+         // "postCreateCommand": "chmod +x startup.sh && set -o xtrace &&  bash -x startup.sh"
 }
