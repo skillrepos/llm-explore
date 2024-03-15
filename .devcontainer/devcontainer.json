@@ -1,6 +1,12 @@
 {
 	"name": "explore LLM",
 
+	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
+
+	"features": {
+            "ghcr.io/devcontainers/features/common-utils:2" :{}
+         }
+
 	 // Use 'postCreateCommand' to run commands after the container is created.
          // "postCreateCommand": "chmod +x startup.sh && set -o xtrace &&  bash -x startup.sh"
 }
