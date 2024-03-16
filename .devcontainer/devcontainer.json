@@ -1,14 +1,15 @@
+
 {
-	"name": "explore LLM",
-
-	// "image": "mcr.microsoft.com/devcontainers/python:0-3.11",
-	"image": "mcr.microsoft.com/devcontainers/base:debian",
-
-	"features": {
-            "ghcr.io/devcontainers/features/common-utils:2" :{}
-	  //  "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}	
-         }
+    "name": "Debian",
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-from-docker:1": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/go:1": {},
+        "ghcr.io/devcontainers/features/python:1": {},
+        "ghcr.io/guiyomh/features/golangci-lint:0": {}
+    },
 
 	 // Use 'postCreateCommand' to run commands after the container is created.
-         // "postCreateCommand": "chmod +x startup.sh && set -o xtrace &&  bash -x startup.sh"
+         "postCreateCommand": "sudo apt install fuse3 kmod -y"
 }
