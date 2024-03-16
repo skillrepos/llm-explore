@@ -1,7 +1,7 @@
 
 {
     "name": "Debian",
-    "image": "mcr.microsoft.com/devcontainers/base:bullseye"
+    "image": "docker.io/brent811/universal:1.0.0"
   //  "features": {
      //   "ghcr.io/devcontainers/features/docker-from-docker:1": {},
     //    "ghcr.io/devcontainers/features/github-cli:1": {},
