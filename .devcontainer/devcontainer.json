@@ -4,7 +4,8 @@
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
 
 	"features": {
-            "ghcr.io/devcontainers/features/common-utils:2" :{}
+            "ghcr.io/devcontainers/features/common-utils:2" :{},
+	    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}	
          }
 
 	 // Use 'postCreateCommand' to run commands after the container is created.
