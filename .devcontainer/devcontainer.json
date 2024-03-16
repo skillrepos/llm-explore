@@ -10,6 +10,8 @@
         "ghcr.io/guiyomh/features/golangci-lint:0": {}
     },
 
-	 // Use 'postCreateCommand' to run commands after the container is created.
-         "postCreateCommand": "sudo apt install fuse3 kmod -y"
+    // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "sudo apt update && sudo apt upgrade -y",
+    "postCreateCommand": "sudo apt install fuse ffmpeg pciutils kmod fuse3 -y"
+    
 }
