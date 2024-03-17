@@ -1,7 +1,7 @@
 
 {
     "name": "Debian",
-    "image": "ghcr.io/linuxserver/baseimage-kasmvnc:alpine318"
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye"
   //  "features": {
      //   "ghcr.io/devcontainers/features/docker-from-docker:1": {},
     //    "ghcr.io/devcontainers/features/github-cli:1": {},
