@@ -12,5 +12,5 @@
       //  "ghcr.io/devcontainers/features/python:1": {},
       //  "ghcr.io/guiyomh/features/golangci-lint:0": {}
     },
-    "runArgs": [ "--device /dev/fuse", "--cap-add=SYS_ADMIN", "--security-opt apparmor:unconfirmed" ]   
+    "runArgs": [ "--device /dev/fuse:rw", "--cap-add=SYS_ADMIN", "--privileged" ]   
 }
