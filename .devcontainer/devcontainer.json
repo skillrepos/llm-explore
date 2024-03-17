@@ -1,7 +1,7 @@
 
 {
     "name": "Debian",
-    "image": "docker.io/brent811/universal:1.0.0"
+    "image": "ghcr.io/linuxserver/baseimage-kasmvnc:alpine318"
   //  "features": {
      //   "ghcr.io/devcontainers/features/docker-from-docker:1": {},
     //    "ghcr.io/devcontainers/features/github-cli:1": {},
