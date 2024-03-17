@@ -1,7 +1,10 @@
 
 {
     "name": "Debian",
-    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "Dockerfile"
+    },
     "features": {
          "ghcr.io/devcontainers/features/docker-from-docker:1": {}
     //    "ghcr.io/devcontainers/features/github-cli:1": {},
