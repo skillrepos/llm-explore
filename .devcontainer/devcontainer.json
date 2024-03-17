@@ -1,17 +1,17 @@
 
 {
     "name": "Debian",
-    "image": "mcr.microsoft.com/devcontainers/base:bullseye"
-  //  "features": {
-     //   "ghcr.io/devcontainers/features/docker-from-docker:1": {},
+    "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "features": {
+         "ghcr.io/devcontainers/features/docker-from-docker:1": {}
     //    "ghcr.io/devcontainers/features/github-cli:1": {},
       //  "ghcr.io/devcontainers/features/go:1": {},
       //  "ghcr.io/devcontainers/features/python:1": {},
       //  "ghcr.io/guiyomh/features/golangci-lint:0": {}
-   // },
-
-    // Use 'postCreateCommand' to run commands after the container is created.
-   // "postCreateCommand": "sudo apt update && sudo apt upgrade -y"
-  //  "postCreateCommand": "sudo apt install fuse ffmpeg pciutils kmod fuse3 -y"
+    },
+    "runArgs": [ "--device /dev/fuse", "--cap-add=SYS_ADMIN", "--security-opt apparmor:unconfirmed" ],
+      // Use 'postCreateCommand' to run commands after the container is created.
+    "postCreateCommand": "sudo apt update && sudo apt upgrade -y",
+    "postCreateCommand": "sudo apt install fuse ffmpeg pciutils kmod fuse3 -y"
     
 }
