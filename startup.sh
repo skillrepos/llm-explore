@@ -9,8 +9,8 @@ meson setup ..
 sudo ninja install
 sudo apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev -y
 wget https://releases.lmstudio.ai/linux/0.2.15/beta/LM_Studio-0.2.15-beta-1.AppImage
-chmod +x LM_Studio-0.2.14-beta-1.AppImage
+chmod +x LM_Studio-0.2.15-beta-1.AppImage
 docker compose up -d
 export DISPLAY=127.0.0.1:0
-./LM_Studio-0.2.14-beta-1.AppImage
+./LM_Studio-0.2.15-beta-1.AppImage
 
