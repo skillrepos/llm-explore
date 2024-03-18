@@ -15,5 +15,5 @@ wget https://releases.lmstudio.ai/linux/0.2.15/beta/LM_Studio-0.2.15-beta-1.AppI
 chmod +x LM_Studio-0.2.15-beta-1.AppImage
 docker compose up -d
 export DISPLAY=127.0.0.1:0
-./LM_Studio-0.2.15-beta-1.AppImage
+./LM_Studio-0.2.15-beta-1.AppImage &
 
