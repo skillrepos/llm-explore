@@ -4,13 +4,13 @@
     "build": {
      // Path is relative to the devcontainer.json file.
         "dockerfile": "Dockerfile"
-   }
-   // "features": {
-     //    "ghcr.io/devcontainers/features/docker-from-docker:1": {}
-    //    "ghcr.io/devcontainers/features/github-cli:1": {},
+   },
+   "features": {
+       "ghcr.io/devcontainers/features/docker-from-docker:1": {},
+       "ghcr.io/devcontainers/features/github-cli:1": {},
       //  "ghcr.io/devcontainers/features/go:1": {},
-      //  "ghcr.io/devcontainers/features/python:1": {},
+       "ghcr.io/devcontainers/features/python:1": {}
       //  "ghcr.io/guiyomh/features/golangci-lint:0": {}
-   // },
-//    "runArgs": [ "--device /dev/fuse:rw", "--cap-add=SYS_ADMIN", "--privileged" ]   
+    },
+    "runArgs": [ "--cap-add=SYS_ADMIN", "--privileged" ]   
 }
