@@ -15,5 +15,5 @@
     "runArgs": [ "--cap-add=SYS_ADMIN", "--privileged" ],
     "forwardPorts": [5800],
     "portsAttributes": {"5800": {"label": "LM Studio"}},
-    "postStartCommand": "bash -c /workspaces/llm-explore/startup.sh"
+    "postStartCommand": "nohup bash -c /workspaces/llm-explore/startup.sh &"
 }
