@@ -1,5 +1,5 @@
 sudo apt update && sudo apt upgrade -y
-sudo apt install meson ninja-build fuse -y
+sudo apt install meson ninja-build ffmpeg fuse -y
 wget https://github.com/libfuse/libfuse/releases/download/fuse-3.16.2/fuse-3.16.2.tar.gz
 sudo tar xvf fuse-3.16.2.tar.gz
 cd fuse-3.16.2
