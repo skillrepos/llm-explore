@@ -11,9 +11,5 @@ sudo apt install libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 
 cd /workspaces/llm-explore
 rm -rf fuse-3.16.2
 rm fuse-3.16.2.tar.gz
-wget https://releases.lmstudio.ai/linux/0.2.15/beta/LM_Studio-0.2.15-beta-1.AppImage
-mv LM_Studio-0.2.15-beta-1.AppImage LM_Studio.AppImage
-chmod +x LM_Studio.AppImage
-docker compose up -d
-chmod +x startLMStudio.sh
+
 
