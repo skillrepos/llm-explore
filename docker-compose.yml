@@ -11,6 +11,6 @@ services:
   novnc:
     image: geek1011/easy-novnc
     restart: always
-    command: -a :5800 -h display --no-url-password
+    command: -a :5800 -h display --no-url-password -u
     ports:
       - 127.0.0.1:5800:5800
