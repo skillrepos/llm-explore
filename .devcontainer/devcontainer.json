@@ -12,6 +12,9 @@
        "ghcr.io/devcontainers/features/github-cli:1": {},
        "ghcr.io/devcontainers/features/python:1": {}
     },
+    "containerEnv": {
+        "DISPLAY": "127.0.0.1:0"
+    },
     "runArgs": [ "--cap-add=SYS_ADMIN", "--privileged" ],
     "forwardPorts": [5800],
     "portsAttributes": {"5800": {"label": "LM Studio"}},
