@@ -25,7 +25,6 @@ np.random.seed(1)
  
 # Initialize weights randomly with mean 0
 weights = 2 * np.random.random((3, 1)) - 1
- 
 # Learning rate
 learning_rate = 0.1
  
@@ -41,7 +40,6 @@ for iteration in range(10000):
     # Backpropagation
     adjustments = error * sigmoid_derivative(outputs)
     weights += np.dot(input_layer.T, adjustments) * learning_rate
- 
 # Output the results
 print("Output After Training:")
 print(outputs)
