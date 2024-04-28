@@ -1,3 +1,10 @@
+# use this for lab
+# simple example of using llamaindex and ollama to work with documents
+# create ./documents folder and put any desired pdfs in it
+# curl -fsSL https://ollama.com/install.sh | sh 
+# ollama serve & 
+# ollama pull llama2 
+# streamlit run rag-chat.py
 import streamlit as st
 import os
 import os.path
@@ -17,9 +24,6 @@ from llama_index.core import Settings
 
 Settings.llm = llm
 Settings.embed_model = embed_model
-#Settings.node_parser = SentenceSplitter(chunk_size=512, chunk_overlap=64)
-#Settings.num_output = 512
-#Settings.context_window = 3900
 Settings.chunk_size = 512
 Settings.chunk_overlap = 64
 

@@ -15,8 +15,17 @@
     "containerEnv": {
         "DISPLAY": "127.0.0.1:0"
     },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.terminal.activateEnvInCurrentTerminal": true,
+                "python.defaultInterpreterPath": ".venv/bin/python"
+            }
+        }
+    },
     "runArgs": [ "--cap-add=SYS_ADMIN", "--privileged" ],
     "forwardPorts": [5800],
     "portsAttributes": {"5800": {"label": "LM Studio"}},
-    "postStartCommand": "bash -c /workspaces/llm-explore/setup.sh"
+    "postStartCommand": "bash -c /workspaces/llm-explore/setup.sh",
+    "postAttachCommand": "bash"
 }
