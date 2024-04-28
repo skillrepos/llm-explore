@@ -1,21 +1,25 @@
 import streamlit as st
 import PyPDF2
 from transformers import pipeline
-from chromadb import ChromaDB
+from chromadb import chromadb
+from tempfile import NamedTemporaryFile
 
 # Initialize the local language model (LLM) for text generation
 llm = pipeline("text-generation", model="gpt2")  # Change model according to your preference
 
 # Initialize ChromaDB for chunking and embedding
-chromadb = ChromaDB()
+chromadb = chromadb.Client()
 
 # Function to extract text from a PDF file
 def extract_text_from_pdf(pdf_path):
     text = ""
-    with open(pdf_path, "rb") as file:
-        reader = PyPDF2.PdfFileReader(file)
-        for page_num in range(reader.numPages):
-            text += reader.getPage(page_num).extractText()
+    with NamedTemporaryFile(dir='.', suffix='.pdf') as f:
+        f.write(pdf_path.getbuffer())
+        with open(f.name, "rb") as file:
+            reader = PyPDF2.PdfReader(f.name)
+            for page_num in range(len(reader.pages)):
+                text += reader.pages[page_num].extract_text()      
+            f.close()      
     return text
 
 # Function to perform Retrieval-Augmented Generation (RAG) with PDFs
