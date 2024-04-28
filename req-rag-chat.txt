@@ -1,0 +1,8 @@
+python-dotenv
+openai
+llama-index
+pypdf
+streamlit
+nltk
+langchain-community
+llama-index-embeddings-huggingface
